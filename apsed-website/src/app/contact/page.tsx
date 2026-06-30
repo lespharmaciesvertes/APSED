@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'Contactez l\u2019APSED : formulaire, e-mail, WhatsApp, Google Maps et réseaux sociaux.',
 };
 
-const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'saidabdoughanem77@gmail.com';
+const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@apsed.dj';
 const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
 
 export default function ContactPage() {
