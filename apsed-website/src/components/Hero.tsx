@@ -99,7 +99,7 @@ export default function Hero() {
           <div className="card card-hover shimmer overflow-hidden p-2">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl">
               <img
-                src="/photo-joueur.png"
+                src="/photo-joueur.webp"
                 alt="Joueur APSED sur le terrain"
                 className="absolute inset-0 h-full w-full object-cover"
               />
