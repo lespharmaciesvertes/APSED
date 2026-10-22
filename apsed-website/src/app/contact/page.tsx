@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'Contactez l\u2019APSED : formulaire, e-mail, WhatsApp, Google Maps et réseaux sociaux.',
 };
 
-const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'saidabdoughanem77@gmail.com';
+const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@apsed.dj';
 const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
 
 export default function ContactPage() {
@@ -35,6 +35,10 @@ export default function ContactPage() {
                 <h3 className="font-display text-lg uppercase">Coordonnées</h3>
                 <ul className="mt-4 space-y-3 text-sm text-ink/70">
                   <li>
+                    <span className="font-semibold text-ink">Téléphone : </span>
+                    <a href="tel:+25377060413" className="text-emerald hover:underline">+253 77 06 04 13</a>
+                  </li>
+                  <li>
                     <span className="font-semibold text-ink">E-mail : </span>
                     <a href={`mailto:${email}`} className="text-emerald hover:underline">{email}</a>
                   </li>
@@ -44,7 +48,7 @@ export default function ContactPage() {
                       <a href={`https://wa.me/${whatsapp}`} target="_blank" rel="noopener noreferrer" className="text-emerald hover:underline">+{whatsapp}</a>
                     </li>
                   )}
-                  <li><span className="font-semibold text-ink">Zone : </span>Djibouti, République de Djibouti</li>
+                  <li><span className="font-semibold text-ink">Adresse : </span>Hodan 2, Balbala, République de Djibouti</li>
                 </ul>
                 <div className="mt-5 border-t border-ink/10 pt-5">
                   <p className="mb-3 text-sm font-semibold text-ink">Suivez-nous</p>
