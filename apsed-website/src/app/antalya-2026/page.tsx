@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
-import Countdown from '@/components/Countdown';
 
 export const metadata: Metadata = {
   title: 'Antalya 2026',
@@ -35,13 +34,7 @@ export default function AntalyaPage() {
             rendez-vous international du sport corporatif. Un projet fédérateur qui
             incarne notre ambition.
           </p>
-          <div className="animate-rise mt-10 max-w-xl" style={{ animationDelay: '0.2s' }}>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-white/80">
-              Compte à rebours
-            </p>
-            <Countdown target="2026-09-01T09:00:00" />
-          </div>
-          <div className="animate-rise mt-10 flex flex-wrap gap-3" style={{ animationDelay: '0.3s' }}>
+          <div className="animate-rise mt-10 flex flex-wrap gap-3" style={{ animationDelay: '0.2s' }}>
             <Link href="/rejoindre" className="btn bg-white text-ink hover:bg-white/90">
               Rejoindre la délégation
             </Link>
