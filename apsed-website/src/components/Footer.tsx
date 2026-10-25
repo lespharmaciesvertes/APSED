@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Logo from './Logo';
 import Socials from './Socials';
 
-const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'saidabdoughanem77@gmail.com';
+const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@apsed.dj';
 
 export default function Footer() {
   const year = new Date().getFullYear();
