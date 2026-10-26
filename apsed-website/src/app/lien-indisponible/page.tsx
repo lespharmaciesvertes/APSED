@@ -19,8 +19,8 @@ export default function LienIndisponiblePage({
   return (
     <div className="container-x grid min-h-[60vh] place-items-center py-24 text-center">
       <div>
-        <p className="font-display text-7xl text-brand-gradient">Oups</p>
-        <h1 className="display-title mt-4 text-3xl">Lien indisponible</h1>
+        <p className="font-display text-7xl text-brand-gradient">404</p>
+        <h1 className="display-title mt-4 text-3xl">Lien introuvable</h1>
         <p className="mt-3 text-ink/65">
           {reseau
             ? <>La page {reseau} de l&apos;APSED n&apos;est pas encore disponible.</>
