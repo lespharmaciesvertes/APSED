@@ -85,7 +85,7 @@ export default async function EventDetail({
       </div>
 
       <div className="mt-12">
-        <Link href="/#contact" className="btn-accent">
+        <Link href="/contact" className="btn-accent">
           Participer / nous contacter
         </Link>
       </div>

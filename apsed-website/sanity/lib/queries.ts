@@ -111,3 +111,13 @@ export const albumBySlugQuery = groq`
 export const albumSlugsQuery = groq`
   *[_type == "galleryAlbum" && defined(slug.current)][].slug.current
 `;
+
+/* ------------------------- DOCUMENTS ------------------------- */
+
+export const allResourcesQuery = groq`
+  *[_type == "resource"] | order(order asc, title asc) {
+    _id, title, description,
+    "fileUrl": file.asset->url,
+    "fileName": file.asset->originalFilename
+  }
+`;
