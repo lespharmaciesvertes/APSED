@@ -1,6 +1,7 @@
 /**
  * Icônes réseaux sociaux. Les liens sont à compléter avec les vraies pages
- * officielles d'APSED (placeholders « # » pour l'instant).
+ * officielles d'APSED. Tant qu'un lien vaut « # », un clic ouvre la page
+ * /lien-indisponible dans un nouvel onglet.
  */
 const socials = [
   { name: 'Facebook', href: '#', path: 'M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0022 12z' },
@@ -16,7 +17,7 @@ export default function Socials({ className = '' }: { className?: string }) {
       {socials.map((s) => (
         <a
           key={s.name}
-          href={s.href}
+          href={s.href === '#' ? `/lien-indisponible?reseau=${s.name}` : s.href}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={s.name}
