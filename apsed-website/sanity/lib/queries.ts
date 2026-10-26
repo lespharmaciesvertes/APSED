@@ -114,10 +114,14 @@ export const albumSlugsQuery = groq`
 
 /* ------------------------- DOCUMENTS ------------------------- */
 
-export const allResourcesQuery = groq`
-  *[_type == "resource"] | order(order asc, title asc) {
-    _id, title, description,
-    "fileUrl": file.asset->url,
-    "fileName": file.asset->originalFilename
+// Une entrée par emplacement : { url, originalFilename } ou null si vide.
+export const documentsPageQuery = groq`
+  *[_id == "documentsPage"][0] {
+    "plaquette": plaquette.asset->{ url, originalFilename },
+    "sponsoring": sponsoring.asset->{ url, originalFilename },
+    "note": note.asset->{ url, originalFilename },
+    "reglement": reglement.asset->{ url, originalFilename },
+    "charte": charte.asset->{ url, originalFilename },
+    "adhesion": adhesion.asset->{ url, originalFilename }
   }
 `;
