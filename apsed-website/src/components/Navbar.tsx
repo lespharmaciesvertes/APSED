@@ -8,6 +8,7 @@ import Logo from './Logo';
 /** Sous-menu « L'APSED » : tout ce qui présente l'association. */
 const aboutLinks = [
   { href: '/apsed', label: 'Qui sommes-nous ?', desc: 'Notre mission et notre équipe' },
+  { href: '/membres', label: 'Nos membres', desc: 'Les adhérents de l’association' },
   { href: '/sport-corporatif', label: 'Sport corporatif', desc: 'Un levier pour les entreprises' },
   { href: '/activites', label: 'Activités', desc: 'Les disciplines proposées' },
   { href: '/antalya-2026', label: 'Cap sur Antalya 2026', desc: 'Notre projet phare' },

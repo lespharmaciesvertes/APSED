@@ -24,6 +24,7 @@ export default function Footer() {
           <h3 className="font-display text-lg uppercase tracking-wide text-white">Le site</h3>
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link href="/apsed" className="hover:text-white">L&apos;APSED</Link></li>
+            <li><Link href="/membres" className="hover:text-white">Nos membres</Link></li>
             <li><Link href="/sport-corporatif" className="hover:text-white">Sport corporatif</Link></li>
             <li><Link href="/activites" className="hover:text-white">Activités</Link></li>
             <li><Link href="/evenements" className="hover:text-white">Projets & événements</Link></li>
