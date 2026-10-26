@@ -125,3 +125,11 @@ export const documentsPageQuery = groq`
     "adhesion": adhesion.asset->{ url, originalFilename }
   }
 `;
+
+/* ------------------------- MEMBRES ------------------------- */
+
+export const allMembersQuery = groq`
+  *[_type == "member"] | order(order asc, name asc) {
+    _id, name, photo, role, company
+  }
+`;
