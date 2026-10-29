@@ -51,7 +51,7 @@ export default async function HomePage() {
           <Reveal delay={120}>
             <div className="card card-hover shimmer overflow-hidden p-2">
               <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
-                <img src="/photo-equipe.png" alt="Équipe APSED" className="absolute inset-0 h-full w-full object-cover" />
+                <img src="/photo-equipe.webp" alt="Équipe APSED" className="absolute inset-0 h-full w-full object-cover" />
               </div>
             </div>
           </Reveal>

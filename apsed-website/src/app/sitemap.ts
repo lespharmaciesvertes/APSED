@@ -16,7 +16,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ]);
 
   const routes = [
-    '', 'apsed', 'sport-corporatif', 'activites', 'evenements',
+    '', 'apsed', 'membres', 'sport-corporatif', 'activites', 'evenements',
     'antalya-2026', 'partenaires', 'actualites', 'galerie',
     'documents', 'rejoindre', 'contact',
   ];

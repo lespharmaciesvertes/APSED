@@ -111,3 +111,25 @@ export const albumBySlugQuery = groq`
 export const albumSlugsQuery = groq`
   *[_type == "galleryAlbum" && defined(slug.current)][].slug.current
 `;
+
+/* ------------------------- DOCUMENTS ------------------------- */
+
+// Une entrée par emplacement : { url, originalFilename } ou null si vide.
+export const documentsPageQuery = groq`
+  *[_id == "documentsPage"][0] {
+    "plaquette": plaquette.asset->{ url, originalFilename },
+    "sponsoring": sponsoring.asset->{ url, originalFilename },
+    "note": note.asset->{ url, originalFilename },
+    "reglement": reglement.asset->{ url, originalFilename },
+    "charte": charte.asset->{ url, originalFilename },
+    "adhesion": adhesion.asset->{ url, originalFilename }
+  }
+`;
+
+/* ------------------------- MEMBRES ------------------------- */
+
+export const allMembersQuery = groq`
+  *[_type == "member"] | order(order asc, name asc) {
+    _id, name, photo, role, company
+  }
+`;
